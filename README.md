@@ -28,7 +28,6 @@ You can also check out the more advanced Chainlink tutorials there as well.
     - [Chainlink VRF](#chainlink-vrf)
     - [Chainlink API Call](#chainlink-api-call)
     - [Chainlink Keeper Deployment](#chainlink-keeper-deployment)
-    - [Local Development](#local-development-1)
   - [Testing](#testing)
     - [To test development / local](#to-test-development--local)
     - [To test mainnet-fork](#to-test-mainnet-fork)
@@ -73,6 +72,8 @@ This will open up a new Chainlink project. Or, you can clone from source:
 git clone https://github.com/PatrickAlphaC/chainlink-mix
 cd chainlink-mix 
 ```
+
+Then follow either the [Testnet Development](#testnet-development) or [Local Development](#local-development) setup. If you don't know where to start, follow along with the [Testnet Development](#testnet-development) setup. 
 
 ## Testnet Development
 If you want to be able to deploy to testnets, do the following. 
@@ -173,10 +174,6 @@ brownie run scripts/keeper_scripts/01_deploy_keeper_counter.py --network kovan
 brownie run scripts/keeper_scripts/02_check_upkeep.py --network kovan
 ```
 
-
-### Local Development
-
-For local development, you might want to deploy mocks. You can run the script to deploy mocks. Depending on your setup, it might make sense to *not* deploy mocks if you're looking to fork a mainnet. It all depends on what you're looking to do though. Right now, the scripts automatically deploy a mock so they can run.
 
 ## Testing
 
