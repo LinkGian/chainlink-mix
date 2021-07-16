@@ -14,8 +14,9 @@ compiler:
 # automatically fetch contract sources from Etherscan
 autofetch_sources: True
 # Uncomment to use the .env file
-# dotenv: .env
+dotenv: .env
 # set a custom mnemonic for the development network
+# can change network to which you want to deploy to "ganache/Kovan"
 networks:
   default: development
   development:
